@@ -2,18 +2,18 @@
 Bop It Documentation
 
 The Bop It Game is implemented on the following stack:
-    1. Vanilla HTML/CSS
-    2. Vanilla JavaScript
-    3. Bootstrap CSS components (https://getbootstrap.com/)
-    4. JQuery Animations (https://jquery.com/)
-    5. Protractor for spec tests (http://www.protractortest.org/)
-    6. Howler.js for audio (https://howlerjs.com/
-    7. grunt and several miscellaneous plugins for running selenium server and protractor tests.
+1. Vanilla HTML/CSS
+2. Vanilla JavaScript
+3. Bootstrap CSS components (https://getbootstrap.com/)
+4. JQuery Animations (https://jquery.com/)
+5. Protractor for spec tests (http://www.protractortest.org/)
+6. Howler.js for audio (https://howlerjs.com/
+7. grunt and several miscellaneous plugins for running selenium server and protractor tests.
 
 Once you unzip the project, please run:
- 1. #npm install# to download dependencies
- 2. #npm start# to start the web server, play the game on http://localhost:9000
- 3. #npm test# to run protractor tests.
+ 1. **npm install** to download dependencies
+ 2. **npm start** to start the web server, play the game on http://localhost:9000
+ 3. **npm test** to run protractor tests.
  
 Please turn on sound for the complete interactive experience. Its best if you use Google Chrome or Firefox Quantum. Howler.js works best in Safari 11+.
 
