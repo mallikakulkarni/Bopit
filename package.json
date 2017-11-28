@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "protractor": "^5.2.0"
+  },
+  "name": "bopit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-protractor-runner": "^5.0.0",
+    "grunt-run": "^0.8.0",
+    "http-server": "^0.10.0"
+  },
+  "scripts": {
+    "start": "http-server . -a localhost -p 9000",
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Mallika Kulkarni",
+  "license": "ISC",
+  "description": "Bop It!"
+}

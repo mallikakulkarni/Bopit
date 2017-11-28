@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bop It</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bopit.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.5/howler.min.js"></script>
+</head>
+<body>
+    <div id="countdown">
+        <span id="minutes" class="minutes">0</span>
+        <span><b>Minutes</b></span>
+        <span id="seconds" class="seconds">0</span>
+        <span><b>Seconds</b></span>
+    </div>
+    <ul class="start-screen" style="position: absolute; left: 0px">
+        <li>
+            <button class="round green"><b>"Twist it</b> When you see Twist it</button>
+        </li>
+        <li>
+            <button class="round red"><b>"Pull it</b> When you see Pull it</button>
+        </li>
+        <li>
+            <button class="round yellow"><b>"Bop it</b> When you see Bop it</button>
+        </li>
+        <li>
+            <button id="start-button" class="start-button round purple" onclick="start()">Play Now</button>
+        </li>
+    </ul>
+    <ul class="play-screen" >
+        <li style="display: block">
+            <ul>
+                <li class="button-li">
+                    <button class="round green gameActionButton" data-actionname="Twist It" data-clicksound="SFX_Twist_R.mp3" onclick="handleClick(event)">Twist It</button>
+                </li>
+                <li class="button-li">
+                    <button class="round red gameActionButton" data-actionname="Pull It" data-clicksound="SFX_Pull_R.mp3" onclick="handleClick(event)">Pull It</button>
+                </li>
+                <li class="button-li">
+                    <button class="round yellow gameActionButton" data-actionname="Bop It" data-clicksound="SFX_Bop_R.mp3" onclick="handleClick(event)">Bop It</button>
+                </li>
+            </ul>
+        </li>
+        <li style="display: block">
+            <ul>
+                <li class="instruction">
+                    <div id="instr" class="alert alert-primary " role="alert">
+                        Starting...
+                    </div>
+                </li>
+
+                <li class="instruction">
+                    <div class="alert alert-primary " role="alert">
+                        SCORE: <span id="score">0</span>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li style="display: block">
+            <ul>
+                <li class="instruction">
+                    <button class="btn btn-lg btn-warning" onclick="reset()">Go to start screen</button>
+                </li>
+            </ul>
+        </li>
+    </ul>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bopit.js"></script>
+<script>showStartScreen()</script>
+</body>
+</html>
